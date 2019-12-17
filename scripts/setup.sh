@@ -1,0 +1,2 @@
+docker run -v "$STACK_DATA/openvpn:/etc/openvpn" --log-driver=none --rm kylemanna/openvpn ovpn_genconfig -u udp://vpn.$DOMAIN
+docker run -v "$STACK_DATA/openvpn:/etc/openvpn" --log-driver=none --rm -it kylemanna/openvpn ovpn_initpki
